@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs</title>
+</head>
+<body>
+    <h1>opdracht 1</h1>
+    <script>
+
+        function HalloWereld() {
+            for (i = 0; i <3; i++) {
+                document.write('Hello World' + '<br>');
+            }
+            document.write('<br>');
+        }
+        HalloWereld();
+        
+        function HelloWorld() {
+            for (i = 0; i <7; i++) {
+                document.write('Hello World' + '<br>');
+            }
+            document.write('<br>')
+        }
+        HelloWorld();
+
+    </script>
+
+    <h1>Opdracht 2</h1>
+    <script>
+
+        function Addition(NumberOne, NumberTwo) {
+            return NumberOne + NumberTwo;
+        }
+        var add = Addition (10, 12);
+        document.write("10 + 12 = " + add + '<br>');
+
+        function Substraction(NumberOne, NumberTwo) {
+            return NumberOne - NumberTwo;
+        }
+        var sub = Substraction(58, 34);
+        document.write("58 - 34 = " + sub + '<br>');
+
+        function Multiplication(NumberOne, NumberTwo) {
+            return NumberOne * NumberTwo;
+        }
+        var multi = Multiplication(6, 7);
+        document.write("6 x 7 = " + multi + '<br>');
+
+        function Division(NumberOne, NumberTwo) {
+            return NumberOne / NumberTwo;
+        }
+        var div = Division(144, 12);
+        document.write("144 : 12 = " + div + '<br>');
+
+    </script>
+
+    <h1>Opdracht 3</h1>
+    <script>
+        let questions = ["naam", "leeftijd"];
+        let currentQuestion = 0;
+        let questionCount = questions.length - 1;
+
+        while(looper(questions[currentQuestion]) !== "stop") {
+            if(currentQuestion !== questionCount) {
+                currentQuestion++;
+            } else {
+                currentQuestion = 0;
+            }
+        }
+        function looper(title) {
+            let anw = prompt(title);
+            if(anw == "stop") {
+                console.log("end");
+            } else {
+                // Push oject to array or sum like that
+                console.log(`Title: ${title}; Anw: ${anw}`);
+            }
+            
+            return anw
+        }
+    </script>
+</body>
+</html>
